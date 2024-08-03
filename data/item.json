@@ -1,0 +1,20 @@
+[
+    {
+      "id": 0,
+      "Title": "IphoneX",
+      "Description": "XYZ Apple Os",
+      "cost": "$599.99"
+    },
+    {
+      "id": 1,
+      "Title": "Item 23457",
+      "Description": "5G network enabled",
+      "cost": "$999.99"
+    },
+    {
+      "id": 2,
+      "Title": "Item 23458",
+      "Description": "multi screen colour",
+      "cost": "$899.99"
+    }
+  ]

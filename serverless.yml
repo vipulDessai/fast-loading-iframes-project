@@ -1,0 +1,17 @@
+service: fast-loading-iframes-project-child-api
+
+provider:
+  name: aws
+  region: us-east-1
+  httpApi:
+    payload: "2.0"
+  lambdaHashingVersion: 20201221
+  runtime: nodejs20.x
+
+functions:
+  api:
+    handler: handler.server
+    events: 
+      - http:
+          path: /{proxy+}
+          method: any
