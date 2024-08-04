@@ -6,6 +6,7 @@
     "dev": "sst bind next dev",
     "deploy": "sst deploy --stage prod",
     "build": "next build",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "next start",
     "lint": "next lint",
     "pretty": "prettier --write handler.ts server.js codegen.ts .eslintrc.json next.config.js next-env.d.ts jest.config.ts ./__tests__/* ./__tests__/**/* ./__mocks__/* ./__mocks__/**/* ./components/* ./components/**/* ./styles/* ./styles/**/* ./pages/* ./pages/**/* ./data/**/* --ignore-unknown",
