@@ -1,0 +1,58 @@
+frameworkVersion: "3"
+
+service: fast-loading-iframes-project-child-api
+
+provider:
+  name: aws
+  region: us-east-1
+  httpApi:
+    payload: "2.0"
+  lambdaHashingVersion: 20201221
+  runtime: nodejs20.x
+  stage: dev
+
+plugins:
+  - serverless-next.js
+  - serverless-offline
+
+custom:
+  nextConfigDir: ./
+  customDomain:
+    domainName: www.example.com
+    basePath: ''
+    stage: ${self:provider.stage}
+    createRoute53Record: true
+
+functions:
+  api:
+    handler: handler.server
+    events:
+      - http:
+          path: /api/{proxy+}
+          method: ANY
+      - http:
+          path: /api
+          method: ANY
+  static:
+    handler: handler.server
+    events:
+      - http:
+          path: /_next/{proxy+}
+          method: ANY
+      - http:
+          path: /static/{proxy+}
+          method: ANY
+  pages:
+    handler: handler.server
+    events:
+      - http:
+          path: /{proxy+}
+          method: ANY
+      - http:
+          path: /
+          method: ANY
+
+package:
+  exclude:
+    - node_modules/**
+    - venv/**

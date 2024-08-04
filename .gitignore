@@ -19,6 +19,7 @@
 .DS_Store
 *.pem
 package-lock.json
+undefined
 
 # debug
 npm-debug.log*
@@ -35,3 +36,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# sst
+.sst
+sst-env.d.ts
+
+# open-next
+.open-next
