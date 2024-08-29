@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "sst bind next dev",
+    "sst:dev": "sst bind next dev",
+    "dev": "next dev",
     "deploy": "sst deploy --stage prod",
     "build": "next build",
     "test": "echo \"Error: no test specified\" && exit 0",
