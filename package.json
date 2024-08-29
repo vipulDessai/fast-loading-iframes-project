@@ -9,8 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "start": "next start",
     "lint": "next lint",
-    "pretty": "prettier --write handler.ts server.js codegen.ts .eslintrc.json next.config.js next-env.d.ts jest.config.ts ./__tests__/* ./__tests__/**/* ./__mocks__/* ./__mocks__/**/* ./components/* ./components/**/* ./styles/* ./styles/**/* ./pages/* ./pages/**/* ./data/**/* --ignore-unknown",
-    "prettier:watch": "onchange handler.ts server.js codegen.ts .eslintrc.json next.config.js next-env.d.ts jest.config.ts \"./__tests__/*\" \"./__tests__/**/*\" \"./__mocks__/*\" \"./__mocks__/**/*\" \"./components/*\" \"./components/**/*\" \"./styles/*\" \"./styles/**/*\" \"./pages/*\" \"./pages/**/*\" \"./data/**/*\" -- prettier --write --ignore-unknown {{changed}}"
+    "pretty": "prettier --write ./**/* --ignore-unknown",
+    "prettier:watch": "onchange \"./**/*\" -- prettier --write --ignore-unknown {{changed}}"
   },
   "dependencies": {
     "@next/font": "14.2.5",
