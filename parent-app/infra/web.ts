@@ -10,7 +10,7 @@ export const frontend = new sst.aws.StaticSite("Frontend", {
     VITE_REGION: region,
     VITE_CHILD_IFRAME_URL:
       $app.stage === "prod"
-        ? "https://d265hohjoe5m4b.cloudfront.net"
+        ? "https://dw55ui6s3616k.cloudfront.net/index.html"
         : "http://localhost:3000",
   },
 });
