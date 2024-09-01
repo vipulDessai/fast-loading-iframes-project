@@ -4,7 +4,7 @@ import { NextjsSite } from "sst/constructs";
 export default {
   config(_input) {
     return {
-      name: "fast-loading-iframes-project-child",
+      name: "fast-loading-iframes-project-child-next-js",
       region: "us-east-1",
     };
   },
