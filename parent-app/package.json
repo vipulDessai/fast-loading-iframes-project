@@ -6,8 +6,6 @@
   "scripts": {
     "dev": "sst dev",
     "deploy": "sst deploy --stage prod",
-    "prettier:watch": "onchange \"./**/*\" -- prettier --write --ignore-unknown {{changed}}",
-    "pretty": "prettier --write ./**/* --ignore-unknown",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
