@@ -1,0 +1,29 @@
+{
+  "name": "fast-loading-iframes-project-parent",
+  "version": "1.0.0",
+  "description": "project to host https://github.com/vipulDessai/fast-loading-iframes-project-child",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sst dev",
+    "deploy": "sst deploy --stage prod",
+    "prettier:watch": "onchange \"./**/*\" -- prettier --write --ignore-unknown {{changed}}",
+    "pretty": "prettier --write ./**/* --ignore-unknown",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vipulDessai/fast-loading-iframes-project-parent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "onchange": "^7.1.0",
+    "prettier": "^3.3.3",
+    "@tsconfig/node20": "^20.1.4",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "sst": "^3.0.75"
+  }
+}

@@ -1,0 +1,16 @@
+version: "3.6"
+services:
+  init:
+    image: fastiframeparent:1.0
+    build: ./docker/
+    command: ["/bin/bash"]
+    environment:
+      - TZ=Etc/GMT
+    volumes:
+      - $PWD:$PWD
+      - "//c/Users/badga/.aws:~/.aws"
+    working_dir: $PWD
+    ports:
+      - "8080:8080"
+      - "3000:3000"
+      - "5173:5173"

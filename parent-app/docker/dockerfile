@@ -1,0 +1,14 @@
+FROM ubuntu:23.10
+
+WORKDIR /
+
+RUN apt update -y
+
+RUN apt install -y curl zip gzip tar git
+
+RUN mkdir -p /usr/local/nvm
+ENV NVM_DIR /usr/local/nvm
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+ENV NODE_VERSION_22 v22.5.1
+RUN /bin/bash -c "source $NVM_DIR/nvm.sh && nvm install $NODE_VERSION_22 && nvm use --delete-prefix $NODE_VERSION_22"
