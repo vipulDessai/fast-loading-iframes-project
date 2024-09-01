@@ -1,0 +1,31 @@
+{
+  "name": "fast-loading-iframes-project-child",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "sst:dev": "sst bind next dev",
+    "dev": "next dev",
+    "deploy": "sst deploy --stage prod",
+    "build": "next build",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "14.2.5",
+    "@types/node": "22.1.0",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5",
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "5.5.4"
+  },
+  "devDependencies": {
+    "sst": "^2.43.4",
+    "aws-cdk-lib": "2.142.1",
+    "constructs": "10.3.0"
+  }
+}
